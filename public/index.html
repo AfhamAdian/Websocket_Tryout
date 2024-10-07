@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+</head>
+<script src = "https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+<style>
+    #messages {
+        height: 200px; /* Set the height of the scrollable pane */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+        padding: 10px; /* Optional: Add padding for better readability */
+    }
+</style>
+
+<body>
+    <h1>Welcome to Chat</h1>
+    <input type = "text" id = "roomName" placeholder = "Enter Room Name">
+    <button id = "joinRoomBtn">Join Room</button>
+    <input type = "text" id = "message" placeholder = "Enter Message">
+    <button id = "sendMessageBtn">Send Message</button>
+    <div id = "messages">
+    
+    </div>
+</body>
+<script src = "./js/script.js" defer></script>
+</html></html>
